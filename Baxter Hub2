@@ -5,7 +5,7 @@ _G.WS = "56";
 				end)
 				Humanoid.WalkSpeed = _G.WS;
 
-getgenv().loopLevel = true; -- change to "True" for stop
+getgenv().loopLevel = false; -- change to "True" for stop
 while getgenv().loopLevel do task.wait(0.20  )
 game:GetService("ReplicatedStorage").RE.Robbery:FireServer()
 game:GetService("ReplicatedStorage").RE.Rebirth:FireServer()
