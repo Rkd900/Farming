@@ -1,0 +1,31 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Baxter Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Baxter"})
+local Tab = Window:MakeTab({
+	Name = "Tab 1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+
+
+Tab:AddButton({
+	Name = "Star Farming",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Rkd900/Farming/main/Baxter%20Hub",true))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Stop Farming",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Rkd900/Farming/main/Baxter%20Hub2",true))()
+  	end    
+})
+
